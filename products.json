@@ -12,8 +12,8 @@
           "images/forklift1-3.jpeg"
         ],
         "price": "$12000",
-        "desc": "description1",
-        "details": "detailed description here",
+        "desc": "Forklift with carry weight up to 3.5 ton.",
+        "details": "Meet the ultimate solution for container unloading and tight-space operations. This new compact forklift boasts a maximum carry weight of 3.5 tons and can be tailored to your needs with adjustable fork length, fork movement options, and customizable rail types. Flexible, powerful, and ready to boost your productivity!",
         "specs": {
           "Brand": "brand",
           "Model": "1",
@@ -35,8 +35,8 @@
           "images/sweeper1-2.jpeg"
         ],
         "price": "$5000",
-        "desc": "description1",
-        "details": "detailed description here",
+        "desc": "A medium sized sweeper for industrial scale cleaning.",
+        "details": "Keep your warehouse or industrial space spotless with our versatile medium-sized sweeper. Equipped with a 5-liter water tank to control dust and fully adjustable brushes, it effortlessly adapts to different floor surfaces. Compact, powerful, and efficient—cleaning tight spaces has never been easier!",
         "specs": {
           "Brand": "brand",
           "Model": "1",

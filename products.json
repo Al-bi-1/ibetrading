@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Forklifts",
+    "items": [
+      {
+        "name": "forklift1",
+        "images": [
+          "videos/forklift1.mp4",
+          "videos/forklift2.mp4",
+          "images/forklift1-1.jpeg",
+          "images/forklift1-2.jpeg",
+          "images/forklift1-3.jpeg"
+        ],
+        "price": "$6000",
+        "desc": "description1",
+        "details": "detailed description here",
+        "specs": {
+          "Brand": "brand",
+          "Model": "1",
+          "Battery": "yes",
+          "Lift Capacity": "2 Ton"
+        }
+      }
+      
+    ]
+  },
+  {
+    "category": "Industrial Cleaning Machines",
+    "items": [
+      {
+        "name": "Sweeper",
+        "images": [
+          "videos/sweeper1-1.mp4",
+          "images/sweeper1-1.jpeg",
+          "images/sweeper1-2.jpeg"
+        ],
+        "price": "$5000",
+        "desc": "description1",
+        "details": "detailed description here",
+        "specs": {
+          "Brand": "brand",
+          "Model": "1",
+          "Battery": "yes",
+          "Water Capacity": "5 Liters"
+        }
+      }
+      
+      
+    ]
+  }
+  
+]

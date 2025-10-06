@@ -1,0 +1,281 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #06628d;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #06628d;
+  padding: 0;
+}
+
+header nav {
+  display:flex;
+  padding: 1rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+header nav a:hover {
+  background-color: #0b88c2;
+  color: white;
+}
+
+.home-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Section banners: half width */
+.section-banner {
+  width: 100%;       /* takes all of its flex column */
+  max-width: 100%;   /* prevents overflow */
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 2rem;
+  text-align: left;
+  gap: 20px; 
+  align-items: stretch;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Individual Cards */
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Images */
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 6px;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  justify-content: left;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.product-detail {
+  padding: 2rem;
+  text-align: left;
+  max-width: 800px;
+  margin-left: 2rem;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.product-detail table {
+  margin: 1rem 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-detail td {
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+}
+
+/* Back button */
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #06628d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0b88c2;
+}
+
+/* Home banner */
+.home-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Product Gallery */
+.gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border 0.2s ease;
+}
+
+.thumbnails img.active,
+.thumbnails img:hover {
+  border: 2px solid #007BFF;
+}
+
+.main-image img {
+  width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* make sure main image container clips overflow while zooming */
+.main-image {
+  overflow: hidden;
+}
+
+/* zoomable image styles */
+.zoomable {
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: center center;
+  transition: transform 0.18s ease;
+  will-change: transform;
+}
+
+/* zoomed state (2x). Adjust scale for stronger/weaker zoom */
+.zoomable.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.thumbnails img,
+.thumbnails video {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border 0.2s ease;
+}
+
+.thumbnails img.active,
+.thumbnails video.active,
+.thumbnails img:hover,
+.thumbnails video:hover {
+  border: 2px solid #007BFF;
+}
+
+.main-image img,
+.main-image video {
+  width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.video-thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.video-thumb img {
+  display: block;
+  border-radius: 6px;
+}
+
+.video-thumb .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

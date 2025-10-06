@@ -178,6 +178,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  max-height: 400px;       /* limit height */
+  overflow-y: auto;        /* enable vertical scroll */
+  padding-right: 5px;
 }
 
 .thumbnails img {

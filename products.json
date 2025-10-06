@@ -3,7 +3,7 @@
     "category": "Forklifts",
     "items": [
       {
-        "name": "forklift1",
+        "name": "Medium sized Forklift",
         "images": [
           "videos/forklift1.mp4",
           "videos/forklift2.mp4",
@@ -11,7 +11,7 @@
           "images/forklift1-2.jpeg",
           "images/forklift1-3.jpeg"
         ],
-        "price": "$6000",
+        "price": "$12000",
         "desc": "description1",
         "details": "detailed description here",
         "specs": {

@@ -283,42 +283,62 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- Responsive layout for mobile devices --- */
+  /* --- Responsive layout for mobile devices --- */
 @media (max-width: 768px) {
+  /* Stack the left (info/map) and right (form) sections */
   main {
-    flex-direction: column;       /* stack vertically */
-    align-items: center;          /* center elements */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 
+  /* Ensure each section fits the screen */
   main > div {
-    width: 100% !important;       /* make all sections fit the screen width */
+    width: 100% !important;
     padding: 0 !important;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
-  iframe {
-    width: 100% !important;       /* make the map responsive */
-    height: 250px;
-  }
-
-  /* Remove the vertical divider on small screens */
-  main > div[style*="background-color: #06628d"] {
-    display: none !important;
-  }
-
-  form {
-    max-width: 100%;
-    width: 90%;
-  }
-   /* Stack phone and email vertically */
+  /* Stack phone and email vertically */
   main > div > div[style*="display: flex; justify-content: space-between;"] {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 10px;
   }
 
-  /* Remove the left/right padding that causes uneven spacing */
-  main > div > div[style*="padding-right: 20px;"],
-  main > div > div[style*="padding-left: 20px;"] {
+  /* Remove padding from both inner contact blocks */
+  main > div > div > div {
     padding: 0 !important;
   }
+
+  /* Hide the vertical divider between sections */
+  main > div[style*="background-color: #06628d"] {
+    display: none !important;
+  }
+
+  /* Make the Google Map responsive */
+  iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  /* Adjust form width and centering */
+  form {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Ensure inputs fit well on small screens */
+  input,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* Optional: center the form heading */
+  h3 {
+    text-align: center;
+  }
 }
+

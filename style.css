@@ -309,4 +309,16 @@ button:hover {
     max-width: 100%;
     width: 90%;
   }
+   /* Stack phone and email vertically */
+  main > div > div[style*="display: flex; justify-content: space-between;"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  /* Remove the left/right padding that causes uneven spacing */
+  main > div > div[style*="padding-right: 20px;"],
+  main > div > div[style*="padding-left: 20px;"] {
+    padding: 0 !important;
+  }
 }

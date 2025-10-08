@@ -282,3 +282,31 @@ button:hover {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- Responsive layout for mobile devices --- */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;       /* stack vertically */
+    align-items: center;          /* center elements */
+  }
+
+  main > div {
+    width: 100% !important;       /* make all sections fit the screen width */
+    padding: 0 !important;
+  }
+
+  iframe {
+    width: 100% !important;       /* make the map responsive */
+    height: 250px;
+  }
+
+  /* Remove the vertical divider on small screens */
+  main > div[style*="background-color: #06628d"] {
+    display: none !important;
+  }
+
+  form {
+    max-width: 100%;
+    width: 90%;
+  }
+}
